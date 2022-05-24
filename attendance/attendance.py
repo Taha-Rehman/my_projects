@@ -12,7 +12,7 @@ from openpyxl.styles import PatternFill, Border, Side, Alignment, Protection, Fo
 import sys
 
 parser = OptionParser()
-parser.add_option("-a", "--attendance", dest="studentattendance", help="it takes attendance")
+parser.add_option("-a", "--attendance", dest="studentattendance", help="it takes attendance enter any argument")
 parser.add_option("-s", "--student", dest="student", help="Enter student")
 parser.add_option("-r","--removestudent", dest="removestudent", help="Enter rollnumber to delete")
 parser.add_option("-k", "--knowone", dest="knowone", help="Enter enter student rollnumber to get related data")
