@@ -1,0 +1,31 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="fieldWrapper">
+        <!-- {{ form.user.errors }} -->
+        <label for="id_subject">User:</label>
+        {{ form.user }}
+    </div>
+    <div class="fieldWrapper">
+        <!-- {{ form.name.errors }} -->
+        <label for="id_message">Name:</label>
+        {{ form.name }}
+    </div>
+    <div class="fieldWrapper">
+        <!-- {{ form.phone.errors }} -->
+        <label for="id_sender">Phone Number:</label>
+        {{ form.phone }}
+    </div>
+    <div class="fieldWrapper">
+        <!-- {{ form.email.errors }} -->
+        <label for="id_cc_myself">Email address</label>
+        {{ form.email }}
+    </div>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+{% endblock %}
